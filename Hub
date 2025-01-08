@@ -505,8 +505,8 @@ game:service('Players').LocalPlayer.Idled:connect(function()
 end)
 
 Tabs.Discord:AddButton({
-    Title = "Скопировать ссылку",
-    Description = "Нажмите, чтобы скопировать ссылку в буфер обмена",
+    Title = "Copy link ",
+    Description = "click to copy link",
     Callback = function()
         setclipboard("https://discord.gg/YrnWWcsAtp") -- Замените ссылку на свою
         Fluent:Notify({
@@ -526,7 +526,7 @@ ScreenGui.Parent = game.CoreGui
 
 -- Настройка кнопки
 Button.Parent = ScreenGui
-Button.Text = "Нажать Ctrl"
+Button.Text = "Press ctrl"
 Button.Size = UDim2.new(0, 100, 0, 50) -- Размер кнопки
 Button.Position = UDim2.new(0, 10, 0, 10) -- Расположение в левом верхнем углу
 Button.BackgroundColor3 = Color3.new(1, 1, 1)
